@@ -2,11 +2,14 @@ import java.util.Arrays;
 
 public class AnagramStrings {
     public static void main(String[] args) {
-        String x = "let";
-        String y = "tell";
+        String x = "let he";
+        String y = "he let";
 
         x = x.toLowerCase();
         y = y.toLowerCase();
+
+       x = x.replace(" ","");
+        y = y.replace(" ","");
 
         char[] a = x.toCharArray();
         char[] b = y.toCharArray();
