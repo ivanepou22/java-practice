@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapsJava {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class MapsJava {
         Map<Character, Integer>map = new HashMap();
 
         int i = 0;
-
+        //fill the map
         while (i < size) {
             if (map.containsKey(y[i]) == false) {
                 map.put(y[i], 1);
@@ -22,6 +23,12 @@ public class MapsJava {
             i++;
         }
 
-        System.out.println(map);
+        //print the values in the map
+        Set<Map.Entry<Character, Integer>> hMap = map.entrySet();
+
+        for (Map.Entry<Character, Integer> data: hMap) {
+            System.out.print(data.getKey());
+            System.out.println(data.getValue());
+        }
     }
 }
