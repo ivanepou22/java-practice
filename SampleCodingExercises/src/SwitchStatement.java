@@ -1,7 +1,6 @@
 public class SwitchStatement {
     public static void main(String[] args) {
         int switchValue = 1;
-
         System.out.println(getMonth("MAY")+ " quarter");
     }
 
